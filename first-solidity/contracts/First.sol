@@ -3,14 +3,13 @@ pragma solidity ^0.4.17;
 contract First{
 	struct Message {
 		address writer;
-		string message;
+		uint message;
 	}
 
 	uint numMessages = 0;
-	// uint msgID = 0;
 	mapping (uint => Message) messageBoard;
 
-	function writeMessage(string m) public returns (uint msgID) {
+	function writeMessage(uint m) public returns (uint msgID) {
 		numMessages = numMessages + 1;
 		msgID = numMessages;
 		messageBoard[msgID] = Message(msg.sender, m);
@@ -21,14 +20,14 @@ contract First{
 		return messageBoard[msgID];
 	}
 
-	function readMessage(uint msgID) public view returns (string s)
+	function readMessage(uint msgID) public view returns (uint m)
 	{
-		Message m = messageBoard[msgID];
-		return m.message;
+		Message msg = messageBoard[msgID];
+		return msg.message;
 	}
 
 	function getWriter(uint msgID) public view returns (address writer){
-		Message storage m = messageBoard[msgID];
-		return m.writer;
+		Message msg = messageBoard[msgID];
+		return msg.writer;
 	}
 }
