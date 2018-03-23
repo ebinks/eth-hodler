@@ -3,7 +3,7 @@ pragma solidity ^0.4.17;
 contract Hodler{
 	event hodl(address indexed hodler, uint indexed amount);
 	event release(address indexed hodler, uint indexed amount);
-	uint hodlFor = 30 days; // possible change: allow for user-set hodl times 
+	uint hodlFor = 1 minutes; // possible change: allow for user-set hodl times 
 
 	struct deposit {
 		uint balance; 
@@ -32,7 +32,7 @@ contract Hodler{
 	}
 
 	// returns total balance of account 
-	function releaseAllEth() public {
+	function releaseAllMyEth() public {
 		require (block.timestamp > (hodlers[msg.sender].depositTime + hodlFor) );
                 uint b = hodlers[msg.sender].balance;
                 msg.sender.transfer(b);

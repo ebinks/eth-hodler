@@ -78,6 +78,25 @@
       "type": "function"
     },
     {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "address"
+        }
+      ],
+      "name": "viewBalance",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "constant": false,
       "inputs": [
         {
@@ -94,25 +113,25 @@
     {
       "constant": false,
       "inputs": [],
-      "name": "releaseAllEth",
+      "name": "releaseAllMyEth",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "bytecode": "0x606060405262278d00600055341561001657600080fd5b610567806100256000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ff1e05b146101365780634a3f17e71461015f5780638bc600d0146101b3578063fd4549ef146101c8575b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555042600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550343373ffffffffffffffffffffffffffffffffffffffff167f39b705486ba97d300457309b46f99af2d6a0b0a6a93839e2c6db2f9b6c28208460405160405180910390a3005b341561014157600080fd5b6101496101eb565b6040518082815260200191505060405180910390f35b341561016a57600080fd5b610196600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610235565b604051808381526020018281526020019250505060405180910390f35b34156101be57600080fd5b6101c6610259565b005b34156101d357600080fd5b6101e960048080359060200190919050506103c2565b005b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60016020528060005260406000206000915090508060000154908060010154905082565b60008054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206001015401421115156102ae57600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015490503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561033357600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a350565b600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101540142118015610459575080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015410155b151561046457600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f1935050505015156104a457600080fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540392505081905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a3505600a165627a7a723058209ee954bf57783510374fbd213b73a51dfd82ad6cfbe33732eb99ee5913b728970029",
-  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ff1e05b146101365780634a3f17e71461015f5780638bc600d0146101b3578063fd4549ef146101c8575b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555042600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550343373ffffffffffffffffffffffffffffffffffffffff167f39b705486ba97d300457309b46f99af2d6a0b0a6a93839e2c6db2f9b6c28208460405160405180910390a3005b341561014157600080fd5b6101496101eb565b6040518082815260200191505060405180910390f35b341561016a57600080fd5b610196600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610235565b604051808381526020018281526020019250505060405180910390f35b34156101be57600080fd5b6101c6610259565b005b34156101d357600080fd5b6101e960048080359060200190919050506103c2565b005b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60016020528060005260406000206000915090508060000154908060010154905082565b60008054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206001015401421115156102ae57600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015490503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561033357600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a350565b600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101540142118015610459575080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015410155b151561046457600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f1935050505015156104a457600080fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540392505081905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a3505600a165627a7a723058209ee954bf57783510374fbd213b73a51dfd82ad6cfbe33732eb99ee5913b728970029",
-  "sourceMap": "26:1154:0:-;;;178:7;163:22;;26:1154;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:1154:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;404:9;374:7;:19;382:10;374:19;;;;;;;;;;;;;;;:27;;:39;;;;451:15;417:7;:19;425:10;417:19;;;;;;;;;;;;;;;:31;;:49;;;;487:9;475:10;470:27;;;;;;;;;;;;26:1154;504:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;249:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;883:295;;;;;;;;;;;;;;607:273;;;;;;;;;;;;;;;;;;;;;;;;;;504:100;548:12;572:7;:19;580:10;572:19;;;;;;;;;;;;;;;:27;;;565:34;;504:100;:::o;249:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;883:295::-;1009:6;981:7;;947;:19;955:10;947:19;;;;;;;;;;;;;;;:31;;;:41;928:15;:61;919:72;;;;;;;;1018:7;:19;1026:10;1018:19;;;;;;;;;;;;;;;:27;;;1009:36;;1063:10;:19;;:22;1083:1;1063:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1133:1;1103:7;:19;1111:10;1103:19;;;;;;;;;;;;;;;:27;;:31;;;;1172:1;1160:10;1152:22;;;;;;;;;;;;883:295;:::o;607:273::-;715:7;;681;:19;689:10;681:19;;;;;;;;;;;;;;;:31;;;:41;662:15;:61;661:110;;;;;764:6;733:7;:19;741:10;733:19;;;;;;;;;;;;;;;:27;;;:37;;661:110;651:122;;;;;;;;777:10;:19;;:27;797:6;777:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;839:6;808:7;:19;816:10;808:19;;;;;;;;;;;;;;;:27;;;:37;;;;;;;;;;;869:6;857:10;849:27;;;;;;;;;;;;607:273;:::o",
-  "source": "pragma solidity ^0.4.17;\n\ncontract Hodler{\n\tevent hodl(address indexed hodler, uint indexed amount);\n\tevent release(address indexed hodler, uint indexed amount);\n\tuint hodlFor = 30 days; \n\n\tstruct deposit {\n\t\tuint balance; \n\t\tuint depositTime;\n\t}\n\n\tmapping (address => deposit) public hodlers; //issue: each address can only have one deposit\n\n\tfunction() public payable {\n\t\thodlers[msg.sender].balance = msg.value;\n\t\thodlers[msg.sender].depositTime = block.timestamp;\n\t\thodl(msg.sender, msg.value);\n\t}\n\n\tfunction viewBalance() public view returns (uint balance){\n\t\treturn hodlers[msg.sender].balance; \n\t}\n\n\tfunction releaseEth(uint amount) public {\n\t\trequire ( (block.timestamp > (hodlers[msg.sender].depositTime + hodlFor))\n\t\t\t && (hodlers[msg.sender].balance >= amount) );\n\t\tmsg.sender.transfer(amount);\n\t\thodlers[msg.sender].balance -= amount;\n\t\trelease(msg.sender, amount);\n\t}\n\n\tfunction releaseAllEth() public {\n\t\trequire (block.timestamp > (hodlers[msg.sender].depositTime + hodlFor) );\n                uint b = hodlers[msg.sender].balance;\n                msg.sender.transfer(b);\n                hodlers[msg.sender].balance = 0;\n               \trelease(msg.sender, b);\n\t}\n}\n",
+  "bytecode": "0x6060604052603c600055341561001457600080fd5b61060b806100236000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ff1e05b146101415780634a3f17e71461016a5780637bb78e7c146101be578063c1a13d1a146101d3578063fd4549ef14610220575b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555042600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550343373ffffffffffffffffffffffffffffffffffffffff167f39b705486ba97d300457309b46f99af2d6a0b0a6a93839e2c6db2f9b6c28208460405160405180910390a3005b341561014c57600080fd5b610154610243565b6040518082815260200191505060405180910390f35b341561017557600080fd5b6101a1600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061028d565b604051808381526020018281526020019250505060405180910390f35b34156101c957600080fd5b6101d16102b1565b005b34156101de57600080fd5b61020a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061041a565b6040518082815260200191505060405180910390f35b341561022b57600080fd5b6102416004808035906020019091905050610466565b005b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60016020528060005260406000206000915090508060000154908060010154905082565b60008054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561030657600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015490503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561038b57600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a350565b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549050919050565b600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206001015401421180156104fd575080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015410155b151561050857600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561054857600080fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540392505081905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a3505600a165627a7a723058208acf241a4dadccadd4b9da4f25745bd1c906ae8aef4be8e345ae29198ab97f0b0029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ff1e05b146101415780634a3f17e71461016a5780637bb78e7c146101be578063c1a13d1a146101d3578063fd4549ef14610220575b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555042600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010181905550343373ffffffffffffffffffffffffffffffffffffffff167f39b705486ba97d300457309b46f99af2d6a0b0a6a93839e2c6db2f9b6c28208460405160405180910390a3005b341561014c57600080fd5b610154610243565b6040518082815260200191505060405180910390f35b341561017557600080fd5b6101a1600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061028d565b604051808381526020018281526020019250505060405180910390f35b34156101c957600080fd5b6101d16102b1565b005b34156101de57600080fd5b61020a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061041a565b6040518082815260200191505060405180910390f35b341561022b57600080fd5b6102416004808035906020019091905050610466565b005b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60016020528060005260406000206000915090508060000154908060010154905082565b60008054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561030657600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015490503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561038b57600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a350565b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549050919050565b600054600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206001015401421180156104fd575080600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015410155b151561050857600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050151561054857600080fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540392505081905550803373ffffffffffffffffffffffffffffffffffffffff167f0357371d4096e0ddbb7ada206ebd8d2c3e4e9dab69d81b61041d7f98a041150960405160405180910390a3505600a165627a7a723058208acf241a4dadccadd4b9da4f25745bd1c906ae8aef4be8e345ae29198ab97f0b0029",
+  "sourceMap": "26:1424:0:-;;;178:9;163:24;;26:1424;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:1424:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;456:9;426:7;:19;434:10;426:19;;;;;;;;;;;;;;;:27;;:39;;;;503:15;469:7;:19;477:10;469:19;;;;;;;;;;;;;;;:31;;:49;;;;539:9;527:10;522:27;;;;;;;;;;;;26:1424;556:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;301:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1151:297;;;;;;;;;;;;;;695:99;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;837:273;;;;;;;;;;;;;;;;;;;;;;;;;;556:100;600:12;624:7;:19;632:10;624:19;;;;;;;;;;;;;;;:27;;;617:34;;556:100;:::o;301:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1151:297::-;1279:6;1251:7;;1217;:19;1225:10;1217:19;;;;;;;;;;;;;;;:31;;;:41;1198:15;:61;1189:72;;;;;;;;1288:7;:19;1296:10;1288:19;;;;;;;;;;;;;;;:27;;;1279:36;;1333:10;:19;;:22;1353:1;1333:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1403:1;1373:7;:19;1381:10;1373:19;;;;;;;;;;;;;;;:27;;:31;;;;1442:1;1430:10;1422:22;;;;;;;;;;;;1151:297;:::o;695:99::-;748:12;772:7;:10;780:1;772:10;;;;;;;;;;;;;;;:18;;;765:25;;695:99;;;:::o;837:273::-;945:7;;911;:19;919:10;911:19;;;;;;;;;;;;;;;:31;;;:41;892:15;:61;891:110;;;;;994:6;963:7;:19;971:10;963:19;;;;;;;;;;;;;;;:27;;;:37;;891:110;881:122;;;;;;;;1007:10;:19;;:27;1027:6;1007:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1069:6;1038:7;:19;1046:10;1038:19;;;;;;;;;;;;;;;:27;;;:37;;;;;;;;;;;1099:6;1087:10;1079:27;;;;;;;;;;;;837:273;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Hodler{\n\tevent hodl(address indexed hodler, uint indexed amount);\n\tevent release(address indexed hodler, uint indexed amount);\n\tuint hodlFor = 1 minutes; // possible change: allow for user-set hodl times \n\n\tstruct deposit {\n\t\tuint balance; \n\t\tuint depositTime;\n\t}\n\n\tmapping (address => deposit) public hodlers; //issue: each address can only have one deposit\n\n\tfunction() public payable {\n\t\thodlers[msg.sender].balance = msg.value;\n\t\thodlers[msg.sender].depositTime = block.timestamp;\n\t\thodl(msg.sender, msg.value);\n\t}\n\n\tfunction viewBalance() public view returns (uint balance){\n\t\treturn hodlers[msg.sender].balance; \n\t}\n\n\t// make so only address can check?\n\tfunction viewBalance(address a) public view returns (uint balance){\n\t\treturn hodlers[a].balance;\n\t}\n\n\t// returns partial balance of account \n\tfunction releaseEth(uint amount) public {\n\t\trequire ( (block.timestamp > (hodlers[msg.sender].depositTime + hodlFor))\n\t\t\t && (hodlers[msg.sender].balance >= amount) );\n\t\tmsg.sender.transfer(amount);\n\t\thodlers[msg.sender].balance -= amount;\n\t\trelease(msg.sender, amount);\n\t}\n\n\t// returns total balance of account \n\tfunction releaseAllMyEth() public {\n\t\trequire (block.timestamp > (hodlers[msg.sender].depositTime + hodlFor) );\n                uint b = hodlers[msg.sender].balance;\n                msg.sender.transfer(b);\n                hodlers[msg.sender].balance = 0;\n               \trelease(msg.sender, b);\n\t}\n}\n",
   "sourcePath": "/home/elizabeth/eth-hodler/contracts/Hodler.sol",
   "ast": {
     "attributes": {
       "absolutePath": "/home/elizabeth/eth-hodler/contracts/Hodler.sol",
       "exportedSymbols": {
         "Hodler": [
-          167
+          180
         ]
       }
     },
@@ -142,10 +161,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            167
+            180
           ],
           "name": "Hodler",
-          "scope": 168
+          "scope": 181
         },
         "children": [
           {
@@ -296,7 +315,7 @@
             "attributes": {
               "constant": false,
               "name": "hodlFor",
-              "scope": 167,
+              "scope": 180,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -315,30 +334,30 @@
               {
                 "attributes": {
                   "argumentTypes": null,
-                  "hexvalue": "3330",
+                  "hexvalue": "31",
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
                   "lValueRequested": false,
-                  "subdenomination": "days",
+                  "subdenomination": "minutes",
                   "token": "number",
-                  "type": "int_const 2592000",
-                  "value": "30"
+                  "type": "int_const 60",
+                  "value": "1"
                 },
                 "id": 15,
                 "name": "Literal",
-                "src": "178:7:0"
+                "src": "178:9:0"
               }
             ],
             "id": 16,
             "name": "VariableDeclaration",
-            "src": "163:22:0"
+            "src": "163:24:0"
           },
           {
             "attributes": {
               "canonicalName": "Hodler.deposit",
               "name": "deposit",
-              "scope": 167,
+              "scope": 180,
               "visibility": "public"
             },
             "children": [
@@ -361,12 +380,12 @@
                     },
                     "id": 17,
                     "name": "ElementaryTypeName",
-                    "src": "209:4:0"
+                    "src": "261:4:0"
                   }
                 ],
                 "id": 18,
                 "name": "VariableDeclaration",
-                "src": "209:12:0"
+                "src": "261:12:0"
               },
               {
                 "attributes": {
@@ -387,23 +406,23 @@
                     },
                     "id": 19,
                     "name": "ElementaryTypeName",
-                    "src": "226:4:0"
+                    "src": "278:4:0"
                   }
                 ],
                 "id": 20,
                 "name": "VariableDeclaration",
-                "src": "226:16:0"
+                "src": "278:16:0"
               }
             ],
             "id": 21,
             "name": "StructDefinition",
-            "src": "190:56:0"
+            "src": "242:56:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "hodlers",
-              "scope": 167,
+              "scope": 180,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => struct Hodler.deposit storage ref)",
@@ -423,7 +442,7 @@
                     },
                     "id": 22,
                     "name": "ElementaryTypeName",
-                    "src": "258:7:0"
+                    "src": "310:7:0"
                   },
                   {
                     "attributes": {
@@ -434,17 +453,17 @@
                     },
                     "id": 23,
                     "name": "UserDefinedTypeName",
-                    "src": "269:7:0"
+                    "src": "321:7:0"
                   }
                 ],
                 "id": 24,
                 "name": "Mapping",
-                "src": "249:28:0"
+                "src": "301:28:0"
               }
             ],
             "id": 25,
             "name": "VariableDeclaration",
-            "src": "249:43:0"
+            "src": "301:43:0"
           },
           {
             "attributes": {
@@ -456,7 +475,7 @@
               ],
               "name": "",
               "payable": true,
-              "scope": 167,
+              "scope": 180,
               "stateMutability": "payable",
               "superFunction": null,
               "visibility": "public"
@@ -471,7 +490,7 @@
                 "children": [],
                 "id": 26,
                 "name": "ParameterList",
-                "src": "352:2:0"
+                "src": "404:2:0"
               },
               {
                 "attributes": {
@@ -482,7 +501,7 @@
                 "children": [],
                 "id": 27,
                 "name": "ParameterList",
-                "src": "370:0:0"
+                "src": "422:0:0"
               },
               {
                 "children": [
@@ -533,7 +552,7 @@
                                     },
                                     "id": 28,
                                     "name": "Identifier",
-                                    "src": "374:7:0"
+                                    "src": "426:7:0"
                                   },
                                   {
                                     "attributes": {
@@ -553,28 +572,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 179,
+                                          "referencedDeclaration": 192,
                                           "type": "msg",
                                           "value": "msg"
                                         },
                                         "id": 29,
                                         "name": "Identifier",
-                                        "src": "382:3:0"
+                                        "src": "434:3:0"
                                       }
                                     ],
                                     "id": 30,
                                     "name": "MemberAccess",
-                                    "src": "382:10:0"
+                                    "src": "434:10:0"
                                   }
                                 ],
                                 "id": 31,
                                 "name": "IndexAccess",
-                                "src": "374:19:0"
+                                "src": "426:19:0"
                               }
                             ],
                             "id": 32,
                             "name": "MemberAccess",
-                            "src": "374:27:0"
+                            "src": "426:27:0"
                           },
                           {
                             "attributes": {
@@ -594,28 +613,28 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 179,
+                                  "referencedDeclaration": 192,
                                   "type": "msg",
                                   "value": "msg"
                                 },
                                 "id": 33,
                                 "name": "Identifier",
-                                "src": "404:3:0"
+                                "src": "456:3:0"
                               }
                             ],
                             "id": 34,
                             "name": "MemberAccess",
-                            "src": "404:9:0"
+                            "src": "456:9:0"
                           }
                         ],
                         "id": 35,
                         "name": "Assignment",
-                        "src": "374:39:0"
+                        "src": "426:39:0"
                       }
                     ],
                     "id": 36,
                     "name": "ExpressionStatement",
-                    "src": "374:39:0"
+                    "src": "426:39:0"
                   },
                   {
                     "children": [
@@ -664,7 +683,7 @@
                                     },
                                     "id": 37,
                                     "name": "Identifier",
-                                    "src": "417:7:0"
+                                    "src": "469:7:0"
                                   },
                                   {
                                     "attributes": {
@@ -684,28 +703,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 179,
+                                          "referencedDeclaration": 192,
                                           "type": "msg",
                                           "value": "msg"
                                         },
                                         "id": 38,
                                         "name": "Identifier",
-                                        "src": "425:3:0"
+                                        "src": "477:3:0"
                                       }
                                     ],
                                     "id": 39,
                                     "name": "MemberAccess",
-                                    "src": "425:10:0"
+                                    "src": "477:10:0"
                                   }
                                 ],
                                 "id": 40,
                                 "name": "IndexAccess",
-                                "src": "417:19:0"
+                                "src": "469:19:0"
                               }
                             ],
                             "id": 41,
                             "name": "MemberAccess",
-                            "src": "417:31:0"
+                            "src": "469:31:0"
                           },
                           {
                             "attributes": {
@@ -725,28 +744,28 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 171,
+                                  "referencedDeclaration": 184,
                                   "type": "block",
                                   "value": "block"
                                 },
                                 "id": 42,
                                 "name": "Identifier",
-                                "src": "451:5:0"
+                                "src": "503:5:0"
                               }
                             ],
                             "id": 43,
                             "name": "MemberAccess",
-                            "src": "451:15:0"
+                            "src": "503:15:0"
                           }
                         ],
                         "id": 44,
                         "name": "Assignment",
-                        "src": "417:49:0"
+                        "src": "469:49:0"
                       }
                     ],
                     "id": 45,
                     "name": "ExpressionStatement",
-                    "src": "417:49:0"
+                    "src": "469:49:0"
                   },
                   {
                     "children": [
@@ -786,7 +805,7 @@
                             },
                             "id": 46,
                             "name": "Identifier",
-                            "src": "470:4:0"
+                            "src": "522:4:0"
                           },
                           {
                             "attributes": {
@@ -806,18 +825,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 179,
+                                  "referencedDeclaration": 192,
                                   "type": "msg",
                                   "value": "msg"
                                 },
                                 "id": 47,
                                 "name": "Identifier",
-                                "src": "475:3:0"
+                                "src": "527:3:0"
                               }
                             ],
                             "id": 48,
                             "name": "MemberAccess",
-                            "src": "475:10:0"
+                            "src": "527:10:0"
                           },
                           {
                             "attributes": {
@@ -837,38 +856,38 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 179,
+                                  "referencedDeclaration": 192,
                                   "type": "msg",
                                   "value": "msg"
                                 },
                                 "id": 49,
                                 "name": "Identifier",
-                                "src": "487:3:0"
+                                "src": "539:3:0"
                               }
                             ],
                             "id": 50,
                             "name": "MemberAccess",
-                            "src": "487:9:0"
+                            "src": "539:9:0"
                           }
                         ],
                         "id": 51,
                         "name": "FunctionCall",
-                        "src": "470:27:0"
+                        "src": "522:27:0"
                       }
                     ],
                     "id": 52,
                     "name": "ExpressionStatement",
-                    "src": "470:27:0"
+                    "src": "522:27:0"
                   }
                 ],
                 "id": 53,
                 "name": "Block",
-                "src": "370:131:0"
+                "src": "422:131:0"
               }
             ],
             "id": 54,
             "name": "FunctionDefinition",
-            "src": "344:157:0"
+            "src": "396:157:0"
           },
           {
             "attributes": {
@@ -880,7 +899,7 @@
               ],
               "name": "viewBalance",
               "payable": false,
-              "scope": 167,
+              "scope": 180,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -895,7 +914,7 @@
                 "children": [],
                 "id": 55,
                 "name": "ParameterList",
-                "src": "524:2:0"
+                "src": "576:2:0"
               },
               {
                 "children": [
@@ -918,17 +937,17 @@
                         },
                         "id": 56,
                         "name": "ElementaryTypeName",
-                        "src": "548:4:0"
+                        "src": "600:4:0"
                       }
                     ],
                     "id": 57,
                     "name": "VariableDeclaration",
-                    "src": "548:12:0"
+                    "src": "600:12:0"
                   }
                 ],
                 "id": 58,
                 "name": "ParameterList",
-                "src": "547:14:0"
+                "src": "599:14:0"
               },
               {
                 "children": [
@@ -971,7 +990,7 @@
                                 },
                                 "id": 59,
                                 "name": "Identifier",
-                                "src": "572:7:0"
+                                "src": "624:7:0"
                               },
                               {
                                 "attributes": {
@@ -991,56 +1010,56 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 179,
+                                      "referencedDeclaration": 192,
                                       "type": "msg",
                                       "value": "msg"
                                     },
                                     "id": 60,
                                     "name": "Identifier",
-                                    "src": "580:3:0"
+                                    "src": "632:3:0"
                                   }
                                 ],
                                 "id": 61,
                                 "name": "MemberAccess",
-                                "src": "580:10:0"
+                                "src": "632:10:0"
                               }
                             ],
                             "id": 62,
                             "name": "IndexAccess",
-                            "src": "572:19:0"
+                            "src": "624:19:0"
                           }
                         ],
                         "id": 63,
                         "name": "MemberAccess",
-                        "src": "572:27:0"
+                        "src": "624:27:0"
                       }
                     ],
                     "id": 64,
                     "name": "Return",
-                    "src": "565:34:0"
+                    "src": "617:34:0"
                   }
                 ],
                 "id": 65,
                 "name": "Block",
-                "src": "561:43:0"
+                "src": "613:43:0"
               }
             ],
             "id": 66,
             "name": "FunctionDefinition",
-            "src": "504:100:0"
+            "src": "556:100:0"
           },
           {
             "attributes": {
-              "constant": false,
+              "constant": true,
               "implemented": true,
               "isConstructor": false,
               "modifiers": [
                 null
               ],
-              "name": "releaseEth",
+              "name": "viewBalance",
               "payable": false,
-              "scope": 167,
-              "stateMutability": "nonpayable",
+              "scope": 180,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -1050,8 +1069,41 @@
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "amount",
-                      "scope": 118,
+                      "name": "a",
+                      "scope": 79,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 67,
+                        "name": "ElementaryTypeName",
+                        "src": "716:7:0"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "VariableDeclaration",
+                    "src": "716:9:0"
+                  }
+                ],
+                "id": 69,
+                "name": "ParameterList",
+                "src": "715:11:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "balance",
+                      "scope": 79,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1064,19 +1116,150 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 67,
+                        "id": 70,
                         "name": "ElementaryTypeName",
-                        "src": "627:4:0"
+                        "src": "748:4:0"
                       }
                     ],
-                    "id": 68,
+                    "id": 71,
                     "name": "VariableDeclaration",
-                    "src": "627:11:0"
+                    "src": "748:12:0"
                   }
                 ],
-                "id": 69,
+                "id": 72,
                 "name": "ParameterList",
-                "src": "626:13:0"
+                "src": "747:14:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 72
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "balance",
+                          "referencedDeclaration": 18,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct Hodler.deposit storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 25,
+                                  "type": "mapping(address => struct Hodler.deposit storage ref)",
+                                  "value": "hodlers"
+                                },
+                                "id": 73,
+                                "name": "Identifier",
+                                "src": "772:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 68,
+                                  "type": "address",
+                                  "value": "a"
+                                },
+                                "id": 74,
+                                "name": "Identifier",
+                                "src": "780:1:0"
+                              }
+                            ],
+                            "id": 75,
+                            "name": "IndexAccess",
+                            "src": "772:10:0"
+                          }
+                        ],
+                        "id": 76,
+                        "name": "MemberAccess",
+                        "src": "772:18:0"
+                      }
+                    ],
+                    "id": 77,
+                    "name": "Return",
+                    "src": "765:25:0"
+                  }
+                ],
+                "id": 78,
+                "name": "Block",
+                "src": "761:33:0"
+              }
+            ],
+            "id": 79,
+            "name": "FunctionDefinition",
+            "src": "695:99:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "releaseEth",
+              "payable": false,
+              "scope": 180,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "scope": 131,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 80,
+                        "name": "ElementaryTypeName",
+                        "src": "857:4:0"
+                      }
+                    ],
+                    "id": 81,
+                    "name": "VariableDeclaration",
+                    "src": "857:11:0"
+                  }
+                ],
+                "id": 82,
+                "name": "ParameterList",
+                "src": "856:13:0"
               },
               {
                 "attributes": {
@@ -1085,9 +1268,9 @@
                   ]
                 },
                 "children": [],
-                "id": 70,
+                "id": 83,
                 "name": "ParameterList",
-                "src": "647:0:0"
+                "src": "877:0:0"
               },
               {
                 "children": [
@@ -1119,13 +1302,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 182,
+                              "referencedDeclaration": 195,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 71,
+                            "id": 84,
                             "name": "Identifier",
-                            "src": "651:7:0"
+                            "src": "881:7:0"
                           },
                           {
                             "attributes": {
@@ -1186,18 +1369,18 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 171,
+                                              "referencedDeclaration": 184,
                                               "type": "block",
                                               "value": "block"
                                             },
-                                            "id": 72,
+                                            "id": 85,
                                             "name": "Identifier",
-                                            "src": "662:5:0"
+                                            "src": "892:5:0"
                                           }
                                         ],
-                                        "id": 73,
+                                        "id": 86,
                                         "name": "MemberAccess",
-                                        "src": "662:15:0"
+                                        "src": "892:15:0"
                                       },
                                       {
                                         "attributes": {
@@ -1257,9 +1440,9 @@
                                                           "type": "mapping(address => struct Hodler.deposit storage ref)",
                                                           "value": "hodlers"
                                                         },
-                                                        "id": 74,
+                                                        "id": 87,
                                                         "name": "Identifier",
-                                                        "src": "681:7:0"
+                                                        "src": "911:7:0"
                                                       },
                                                       {
                                                         "attributes": {
@@ -1279,28 +1462,28 @@
                                                               "overloadedDeclarations": [
                                                                 null
                                                               ],
-                                                              "referencedDeclaration": 179,
+                                                              "referencedDeclaration": 192,
                                                               "type": "msg",
                                                               "value": "msg"
                                                             },
-                                                            "id": 75,
+                                                            "id": 88,
                                                             "name": "Identifier",
-                                                            "src": "689:3:0"
+                                                            "src": "919:3:0"
                                                           }
                                                         ],
-                                                        "id": 76,
+                                                        "id": 89,
                                                         "name": "MemberAccess",
-                                                        "src": "689:10:0"
+                                                        "src": "919:10:0"
                                                       }
                                                     ],
-                                                    "id": 77,
+                                                    "id": 90,
                                                     "name": "IndexAccess",
-                                                    "src": "681:19:0"
+                                                    "src": "911:19:0"
                                                   }
                                                 ],
-                                                "id": 78,
+                                                "id": 91,
                                                 "name": "MemberAccess",
-                                                "src": "681:31:0"
+                                                "src": "911:31:0"
                                               },
                                               {
                                                 "attributes": {
@@ -1312,29 +1495,29 @@
                                                   "type": "uint256",
                                                   "value": "hodlFor"
                                                 },
-                                                "id": 79,
+                                                "id": 92,
                                                 "name": "Identifier",
-                                                "src": "715:7:0"
+                                                "src": "945:7:0"
                                               }
                                             ],
-                                            "id": 80,
+                                            "id": 93,
                                             "name": "BinaryOperation",
-                                            "src": "681:41:0"
+                                            "src": "911:41:0"
                                           }
                                         ],
-                                        "id": 81,
+                                        "id": 94,
                                         "name": "TupleExpression",
-                                        "src": "680:43:0"
+                                        "src": "910:43:0"
                                       }
                                     ],
-                                    "id": 82,
+                                    "id": 95,
                                     "name": "BinaryOperation",
-                                    "src": "662:61:0"
+                                    "src": "892:61:0"
                                   }
                                 ],
-                                "id": 83,
+                                "id": 96,
                                 "name": "TupleExpression",
-                                "src": "661:63:0"
+                                "src": "891:63:0"
                               },
                               {
                                 "attributes": {
@@ -1394,9 +1577,9 @@
                                                   "type": "mapping(address => struct Hodler.deposit storage ref)",
                                                   "value": "hodlers"
                                                 },
-                                                "id": 84,
+                                                "id": 97,
                                                 "name": "Identifier",
-                                                "src": "733:7:0"
+                                                "src": "963:7:0"
                                               },
                                               {
                                                 "attributes": {
@@ -1416,28 +1599,28 @@
                                                       "overloadedDeclarations": [
                                                         null
                                                       ],
-                                                      "referencedDeclaration": 179,
+                                                      "referencedDeclaration": 192,
                                                       "type": "msg",
                                                       "value": "msg"
                                                     },
-                                                    "id": 85,
+                                                    "id": 98,
                                                     "name": "Identifier",
-                                                    "src": "741:3:0"
+                                                    "src": "971:3:0"
                                                   }
                                                 ],
-                                                "id": 86,
+                                                "id": 99,
                                                 "name": "MemberAccess",
-                                                "src": "741:10:0"
+                                                "src": "971:10:0"
                                               }
                                             ],
-                                            "id": 87,
+                                            "id": 100,
                                             "name": "IndexAccess",
-                                            "src": "733:19:0"
+                                            "src": "963:19:0"
                                           }
                                         ],
-                                        "id": 88,
+                                        "id": 101,
                                         "name": "MemberAccess",
-                                        "src": "733:27:0"
+                                        "src": "963:27:0"
                                       },
                                       {
                                         "attributes": {
@@ -1445,38 +1628,38 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 68,
+                                          "referencedDeclaration": 81,
                                           "type": "uint256",
                                           "value": "amount"
                                         },
-                                        "id": 89,
+                                        "id": 102,
                                         "name": "Identifier",
-                                        "src": "764:6:0"
+                                        "src": "994:6:0"
                                       }
                                     ],
-                                    "id": 90,
+                                    "id": 103,
                                     "name": "BinaryOperation",
-                                    "src": "733:37:0"
+                                    "src": "963:37:0"
                                   }
                                 ],
-                                "id": 91,
+                                "id": 104,
                                 "name": "TupleExpression",
-                                "src": "732:39:0"
+                                "src": "962:39:0"
                               }
                             ],
-                            "id": 92,
+                            "id": 105,
                             "name": "BinaryOperation",
-                            "src": "661:110:0"
+                            "src": "891:110:0"
                           }
                         ],
-                        "id": 93,
+                        "id": 106,
                         "name": "FunctionCall",
-                        "src": "651:122:0"
+                        "src": "881:122:0"
                       }
                     ],
-                    "id": 94,
+                    "id": 107,
                     "name": "ExpressionStatement",
-                    "src": "651:122:0"
+                    "src": "881:122:0"
                   },
                   {
                     "children": [
@@ -1530,23 +1713,23 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 179,
+                                      "referencedDeclaration": 192,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 95,
+                                    "id": 108,
                                     "name": "Identifier",
-                                    "src": "777:3:0"
+                                    "src": "1007:3:0"
                                   }
                                 ],
-                                "id": 98,
+                                "id": 111,
                                 "name": "MemberAccess",
-                                "src": "777:10:0"
+                                "src": "1007:10:0"
                               }
                             ],
-                            "id": 99,
+                            "id": 112,
                             "name": "MemberAccess",
-                            "src": "777:19:0"
+                            "src": "1007:19:0"
                           },
                           {
                             "attributes": {
@@ -1554,23 +1737,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 68,
+                              "referencedDeclaration": 81,
                               "type": "uint256",
                               "value": "amount"
                             },
-                            "id": 100,
+                            "id": 113,
                             "name": "Identifier",
-                            "src": "797:6:0"
+                            "src": "1027:6:0"
                           }
                         ],
-                        "id": 101,
+                        "id": 114,
                         "name": "FunctionCall",
-                        "src": "777:27:0"
+                        "src": "1007:27:0"
                       }
                     ],
-                    "id": 102,
+                    "id": 115,
                     "name": "ExpressionStatement",
-                    "src": "777:27:0"
+                    "src": "1007:27:0"
                   },
                   {
                     "children": [
@@ -1617,9 +1800,9 @@
                                       "type": "mapping(address => struct Hodler.deposit storage ref)",
                                       "value": "hodlers"
                                     },
-                                    "id": 103,
+                                    "id": 116,
                                     "name": "Identifier",
-                                    "src": "808:7:0"
+                                    "src": "1038:7:0"
                                   },
                                   {
                                     "attributes": {
@@ -1639,28 +1822,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 179,
+                                          "referencedDeclaration": 192,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 104,
+                                        "id": 117,
                                         "name": "Identifier",
-                                        "src": "816:3:0"
+                                        "src": "1046:3:0"
                                       }
                                     ],
-                                    "id": 105,
+                                    "id": 118,
                                     "name": "MemberAccess",
-                                    "src": "816:10:0"
+                                    "src": "1046:10:0"
                                   }
                                 ],
-                                "id": 106,
+                                "id": 119,
                                 "name": "IndexAccess",
-                                "src": "808:19:0"
+                                "src": "1038:19:0"
                               }
                             ],
-                            "id": 107,
+                            "id": 120,
                             "name": "MemberAccess",
-                            "src": "808:27:0"
+                            "src": "1038:27:0"
                           },
                           {
                             "attributes": {
@@ -1668,23 +1851,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 68,
+                              "referencedDeclaration": 81,
                               "type": "uint256",
                               "value": "amount"
                             },
-                            "id": 108,
+                            "id": 121,
                             "name": "Identifier",
-                            "src": "839:6:0"
+                            "src": "1069:6:0"
                           }
                         ],
-                        "id": 109,
+                        "id": 122,
                         "name": "Assignment",
-                        "src": "808:37:0"
+                        "src": "1038:37:0"
                       }
                     ],
-                    "id": 110,
+                    "id": 123,
                     "name": "ExpressionStatement",
-                    "src": "808:37:0"
+                    "src": "1038:37:0"
                   },
                   {
                     "children": [
@@ -1722,9 +1905,9 @@
                               "type": "function (address,uint256)",
                               "value": "release"
                             },
-                            "id": 111,
+                            "id": 124,
                             "name": "Identifier",
-                            "src": "849:7:0"
+                            "src": "1079:7:0"
                           },
                           {
                             "attributes": {
@@ -1744,18 +1927,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 179,
+                                  "referencedDeclaration": 192,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 112,
+                                "id": 125,
                                 "name": "Identifier",
-                                "src": "857:3:0"
+                                "src": "1087:3:0"
                               }
                             ],
-                            "id": 113,
+                            "id": 126,
                             "name": "MemberAccess",
-                            "src": "857:10:0"
+                            "src": "1087:10:0"
                           },
                           {
                             "attributes": {
@@ -1763,33 +1946,33 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 68,
+                              "referencedDeclaration": 81,
                               "type": "uint256",
                               "value": "amount"
                             },
-                            "id": 114,
+                            "id": 127,
                             "name": "Identifier",
-                            "src": "869:6:0"
+                            "src": "1099:6:0"
                           }
                         ],
-                        "id": 115,
+                        "id": 128,
                         "name": "FunctionCall",
-                        "src": "849:27:0"
+                        "src": "1079:27:0"
                       }
                     ],
-                    "id": 116,
+                    "id": 129,
                     "name": "ExpressionStatement",
-                    "src": "849:27:0"
+                    "src": "1079:27:0"
                   }
                 ],
-                "id": 117,
+                "id": 130,
                 "name": "Block",
-                "src": "647:233:0"
+                "src": "877:233:0"
               }
             ],
-            "id": 118,
+            "id": 131,
             "name": "FunctionDefinition",
-            "src": "607:273:0"
+            "src": "837:273:0"
           },
           {
             "attributes": {
@@ -1799,9 +1982,9 @@
               "modifiers": [
                 null
               ],
-              "name": "releaseAllEth",
+              "name": "releaseAllMyEth",
               "payable": false,
-              "scope": 167,
+              "scope": 180,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1814,9 +1997,9 @@
                   ]
                 },
                 "children": [],
-                "id": 119,
+                "id": 132,
                 "name": "ParameterList",
-                "src": "905:2:0"
+                "src": "1175:2:0"
               },
               {
                 "attributes": {
@@ -1825,9 +2008,9 @@
                   ]
                 },
                 "children": [],
-                "id": 120,
+                "id": 133,
                 "name": "ParameterList",
-                "src": "915:0:0"
+                "src": "1185:0:0"
               },
               {
                 "children": [
@@ -1859,13 +2042,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 182,
+                              "referencedDeclaration": 195,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 121,
+                            "id": 134,
                             "name": "Identifier",
-                            "src": "919:7:0"
+                            "src": "1189:7:0"
                           },
                           {
                             "attributes": {
@@ -1900,18 +2083,18 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 171,
+                                      "referencedDeclaration": 184,
                                       "type": "block",
                                       "value": "block"
                                     },
-                                    "id": 122,
+                                    "id": 135,
                                     "name": "Identifier",
-                                    "src": "928:5:0"
+                                    "src": "1198:5:0"
                                   }
                                 ],
-                                "id": 123,
+                                "id": 136,
                                 "name": "MemberAccess",
-                                "src": "928:15:0"
+                                "src": "1198:15:0"
                               },
                               {
                                 "attributes": {
@@ -1971,9 +2154,9 @@
                                                   "type": "mapping(address => struct Hodler.deposit storage ref)",
                                                   "value": "hodlers"
                                                 },
-                                                "id": 124,
+                                                "id": 137,
                                                 "name": "Identifier",
-                                                "src": "947:7:0"
+                                                "src": "1217:7:0"
                                               },
                                               {
                                                 "attributes": {
@@ -1993,28 +2176,28 @@
                                                       "overloadedDeclarations": [
                                                         null
                                                       ],
-                                                      "referencedDeclaration": 179,
+                                                      "referencedDeclaration": 192,
                                                       "type": "msg",
                                                       "value": "msg"
                                                     },
-                                                    "id": 125,
+                                                    "id": 138,
                                                     "name": "Identifier",
-                                                    "src": "955:3:0"
+                                                    "src": "1225:3:0"
                                                   }
                                                 ],
-                                                "id": 126,
+                                                "id": 139,
                                                 "name": "MemberAccess",
-                                                "src": "955:10:0"
+                                                "src": "1225:10:0"
                                               }
                                             ],
-                                            "id": 127,
+                                            "id": 140,
                                             "name": "IndexAccess",
-                                            "src": "947:19:0"
+                                            "src": "1217:19:0"
                                           }
                                         ],
-                                        "id": 128,
+                                        "id": 141,
                                         "name": "MemberAccess",
-                                        "src": "947:31:0"
+                                        "src": "1217:31:0"
                                       },
                                       {
                                         "attributes": {
@@ -2026,39 +2209,39 @@
                                           "type": "uint256",
                                           "value": "hodlFor"
                                         },
-                                        "id": 129,
+                                        "id": 142,
                                         "name": "Identifier",
-                                        "src": "981:7:0"
+                                        "src": "1251:7:0"
                                       }
                                     ],
-                                    "id": 130,
+                                    "id": 143,
                                     "name": "BinaryOperation",
-                                    "src": "947:41:0"
+                                    "src": "1217:41:0"
                                   }
                                 ],
-                                "id": 131,
+                                "id": 144,
                                 "name": "TupleExpression",
-                                "src": "946:43:0"
+                                "src": "1216:43:0"
                               }
                             ],
-                            "id": 132,
+                            "id": 145,
                             "name": "BinaryOperation",
-                            "src": "928:61:0"
+                            "src": "1198:61:0"
                           }
                         ],
-                        "id": 133,
+                        "id": 146,
                         "name": "FunctionCall",
-                        "src": "919:72:0"
+                        "src": "1189:72:0"
                       }
                     ],
-                    "id": 134,
+                    "id": 147,
                     "name": "ExpressionStatement",
-                    "src": "919:72:0"
+                    "src": "1189:72:0"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        136
+                        149
                       ]
                     },
                     "children": [
@@ -2066,7 +2249,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "b",
-                          "scope": 166,
+                          "scope": 179,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -2079,14 +2262,14 @@
                               "name": "uint",
                               "type": "uint256"
                             },
-                            "id": 135,
+                            "id": 148,
                             "name": "ElementaryTypeName",
-                            "src": "1009:4:0"
+                            "src": "1279:4:0"
                           }
                         ],
-                        "id": 136,
+                        "id": 149,
                         "name": "VariableDeclaration",
-                        "src": "1009:6:0"
+                        "src": "1279:6:0"
                       },
                       {
                         "attributes": {
@@ -2120,9 +2303,9 @@
                                   "type": "mapping(address => struct Hodler.deposit storage ref)",
                                   "value": "hodlers"
                                 },
-                                "id": 137,
+                                "id": 150,
                                 "name": "Identifier",
-                                "src": "1018:7:0"
+                                "src": "1288:7:0"
                               },
                               {
                                 "attributes": {
@@ -2142,33 +2325,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 179,
+                                      "referencedDeclaration": 192,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 138,
+                                    "id": 151,
                                     "name": "Identifier",
-                                    "src": "1026:3:0"
+                                    "src": "1296:3:0"
                                   }
                                 ],
-                                "id": 139,
+                                "id": 152,
                                 "name": "MemberAccess",
-                                "src": "1026:10:0"
+                                "src": "1296:10:0"
                               }
                             ],
-                            "id": 140,
+                            "id": 153,
                             "name": "IndexAccess",
-                            "src": "1018:19:0"
+                            "src": "1288:19:0"
                           }
                         ],
-                        "id": 141,
+                        "id": 154,
                         "name": "MemberAccess",
-                        "src": "1018:27:0"
+                        "src": "1288:27:0"
                       }
                     ],
-                    "id": 142,
+                    "id": 155,
                     "name": "VariableDeclarationStatement",
-                    "src": "1009:36:0"
+                    "src": "1279:36:0"
                   },
                   {
                     "children": [
@@ -2222,23 +2405,23 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 179,
+                                      "referencedDeclaration": 192,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 143,
+                                    "id": 156,
                                     "name": "Identifier",
-                                    "src": "1063:3:0"
+                                    "src": "1333:3:0"
                                   }
                                 ],
-                                "id": 146,
+                                "id": 159,
                                 "name": "MemberAccess",
-                                "src": "1063:10:0"
+                                "src": "1333:10:0"
                               }
                             ],
-                            "id": 147,
+                            "id": 160,
                             "name": "MemberAccess",
-                            "src": "1063:19:0"
+                            "src": "1333:19:0"
                           },
                           {
                             "attributes": {
@@ -2246,23 +2429,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 136,
+                              "referencedDeclaration": 149,
                               "type": "uint256",
                               "value": "b"
                             },
-                            "id": 148,
+                            "id": 161,
                             "name": "Identifier",
-                            "src": "1083:1:0"
+                            "src": "1353:1:0"
                           }
                         ],
-                        "id": 149,
+                        "id": 162,
                         "name": "FunctionCall",
-                        "src": "1063:22:0"
+                        "src": "1333:22:0"
                       }
                     ],
-                    "id": 150,
+                    "id": 163,
                     "name": "ExpressionStatement",
-                    "src": "1063:22:0"
+                    "src": "1333:22:0"
                   },
                   {
                     "children": [
@@ -2309,9 +2492,9 @@
                                       "type": "mapping(address => struct Hodler.deposit storage ref)",
                                       "value": "hodlers"
                                     },
-                                    "id": 151,
+                                    "id": 164,
                                     "name": "Identifier",
-                                    "src": "1103:7:0"
+                                    "src": "1373:7:0"
                                   },
                                   {
                                     "attributes": {
@@ -2331,28 +2514,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 179,
+                                          "referencedDeclaration": 192,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 152,
+                                        "id": 165,
                                         "name": "Identifier",
-                                        "src": "1111:3:0"
+                                        "src": "1381:3:0"
                                       }
                                     ],
-                                    "id": 153,
+                                    "id": 166,
                                     "name": "MemberAccess",
-                                    "src": "1111:10:0"
+                                    "src": "1381:10:0"
                                   }
                                 ],
-                                "id": 154,
+                                "id": 167,
                                 "name": "IndexAccess",
-                                "src": "1103:19:0"
+                                "src": "1373:19:0"
                               }
                             ],
-                            "id": 155,
+                            "id": 168,
                             "name": "MemberAccess",
-                            "src": "1103:27:0"
+                            "src": "1373:27:0"
                           },
                           {
                             "attributes": {
@@ -2367,19 +2550,19 @@
                               "type": "int_const 0",
                               "value": "0"
                             },
-                            "id": 156,
+                            "id": 169,
                             "name": "Literal",
-                            "src": "1133:1:0"
+                            "src": "1403:1:0"
                           }
                         ],
-                        "id": 157,
+                        "id": 170,
                         "name": "Assignment",
-                        "src": "1103:31:0"
+                        "src": "1373:31:0"
                       }
                     ],
-                    "id": 158,
+                    "id": 171,
                     "name": "ExpressionStatement",
-                    "src": "1103:31:0"
+                    "src": "1373:31:0"
                   },
                   {
                     "children": [
@@ -2417,9 +2600,9 @@
                               "type": "function (address,uint256)",
                               "value": "release"
                             },
-                            "id": 159,
+                            "id": 172,
                             "name": "Identifier",
-                            "src": "1152:7:0"
+                            "src": "1422:7:0"
                           },
                           {
                             "attributes": {
@@ -2439,18 +2622,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 179,
+                                  "referencedDeclaration": 192,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 160,
+                                "id": 173,
                                 "name": "Identifier",
-                                "src": "1160:3:0"
+                                "src": "1430:3:0"
                               }
                             ],
-                            "id": 161,
+                            "id": 174,
                             "name": "MemberAccess",
-                            "src": "1160:10:0"
+                            "src": "1430:10:0"
                           },
                           {
                             "attributes": {
@@ -2458,43 +2641,43 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 136,
+                              "referencedDeclaration": 149,
                               "type": "uint256",
                               "value": "b"
                             },
-                            "id": 162,
+                            "id": 175,
                             "name": "Identifier",
-                            "src": "1172:1:0"
+                            "src": "1442:1:0"
                           }
                         ],
-                        "id": 163,
+                        "id": 176,
                         "name": "FunctionCall",
-                        "src": "1152:22:0"
+                        "src": "1422:22:0"
                       }
                     ],
-                    "id": 164,
+                    "id": 177,
                     "name": "ExpressionStatement",
-                    "src": "1152:22:0"
+                    "src": "1422:22:0"
                   }
                 ],
-                "id": 165,
+                "id": 178,
                 "name": "Block",
-                "src": "915:263:0"
+                "src": "1185:263:0"
               }
             ],
-            "id": 166,
+            "id": 179,
             "name": "FunctionDefinition",
-            "src": "883:295:0"
+            "src": "1151:297:0"
           }
         ],
-        "id": 167,
+        "id": 180,
         "name": "ContractDefinition",
-        "src": "26:1154:0"
+        "src": "26:1424:0"
       }
     ],
-    "id": 168,
+    "id": 181,
     "name": "SourceUnit",
-    "src": "0:1181:0"
+    "src": "0:1451:0"
   },
   "compiler": {
     "name": "solc",
@@ -2502,5 +2685,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-19T00:02:02.941Z"
+  "updatedAt": "2018-03-23T18:16:47.976Z"
 }
